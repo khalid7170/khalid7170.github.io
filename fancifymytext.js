@@ -35,7 +35,9 @@ function mooText() {
     var textArea = document.getElementById("textInput");
     var sentences = textArea.value.split(".");
     for (var i = 0; i < sentences.length; i++) {
-        sentences[i] = sentences[i].toUpperCase() + "-Moo";
+        if (sentences[i].trim()) {
+            sentences[i] = sentences[i].trim().toUpperCase() + "-Moo";
+        }
     }
-    textArea.value = sentences.join(".");
+    textArea.value = sentences.join(". ").trim();
 }
