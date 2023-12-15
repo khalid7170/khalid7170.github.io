@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Fancify Shamcify</title>
+    <head>
+        <title>Fancify Shamcify</title>
+        <!-- Link to the JavaScript file -->
+        <script src="fancifymytext.js"></script>
+    </head>
+    <body>
+        <h1>Fancify my Text</h1>
 
-		<!-- link to your script file here -->
-	</head>
+        <!-- UI controls -->
+        <fieldset style="border: 1px solid;">
+            <legend>Text</legend>
+            <textarea id="textInput" rows="4" cols="30"></textarea>
+        </fieldset>
 
-	<body style="overscroll-behavior-x: auto;">
-		<h1>Fancify my Text</h1>
+        <fieldset style="border: 1px solid;">
+            <legend>Fancify</legend>
+            <button id="biggerBtn">Bigger!</button>
+            <br/>
+            <input type="radio" id="fancyShmancy" name="style" onchange="styleText()">
+            <label for="fancyShmancy">FancyShmancy</label>
+            <input type="radio" id="boringBetty" name="style" onchange="styleText()">
+            <label for="boringBetty">BoringBetty</label>
+        </fieldset>
 
-		<!-- Your UI controls go here -->
-		
-		<fieldset style="border: 1px solid;">
-        		<legend>Text</legend>
-        		<textarea id="textInput" rows="4" cols="30"></textarea>
-    		</fieldset>
-
-		<!-- Your UI controls go here -->
-	</body>
+        <button id="mooBtn">Moo</button>
+    </body>
 </html>
